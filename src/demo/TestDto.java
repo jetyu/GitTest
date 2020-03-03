@@ -9,11 +9,11 @@ public class TestDto {
 	float price;
 
 	public String getUniversityName() {
-		return university;
+		return universityName;
 	}
 
-	public void setUniversityName(String university) {
-		this.university = university;
+	public void setUniversityName(String universityName) {
+		this.universityName = universityName;
 	}
 
 	public String getName() {
