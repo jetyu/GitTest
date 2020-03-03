@@ -47,7 +47,7 @@ public class TestDto {
 	public void setUniversityName(String universityName) {
 		this.universityName = universityName;
 	}
-
+		
 	public String getUniversityMajor() {
 		return universityMajor;
 	}
@@ -55,7 +55,5 @@ public class TestDto {
 	public void setUniversityMajor(String universityMajor) {
 		this.universityMajor = universityMajor;
 	}
-
 	
-
 }
