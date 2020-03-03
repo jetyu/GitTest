@@ -1,7 +1,7 @@
 package demo;
 
 public class TestDto {
- 	String sex;
+ 	String gender;
 	String universityName;
 	String schoolName;
 	String name;
