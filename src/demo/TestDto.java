@@ -5,17 +5,8 @@ public class TestDto {
 	String name;
 	String gender;
 	int age;
- 
 	String universityName;
 	String universityMajor;
-	
-	public String getUniversityMajor() {
-		return universityMajor;
-	}
-
-	public void setUniversityMajor(String universityMajor) {
-		this.universityMajor = universityMajor;
-	}
 
 	public int getId() {
 		return id;
@@ -57,10 +48,12 @@ public class TestDto {
 		this.universityName = universityName;
 	}
 
-	@Override
-	public String toString() {
-		return "TestDto [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", universityName="
-				+ universityName + ", universityMajor=" + universityMajor + "]";
+	public String getUniversityMajor() {
+		return universityMajor;
+	}
+
+	public void setUniversityMajor(String universityMajor) {
+		this.universityMajor = universityMajor;
 	}
 
 	
