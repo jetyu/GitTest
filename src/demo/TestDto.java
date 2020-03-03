@@ -2,17 +2,17 @@ package demo;
 
 public class TestDto {
  
-	String university;
+	String universityName;
 	String schoolName;
 	String name;
 	int age;
 	float price;
 
-	public String getUniversity() {
+	public String getUniversityName() {
 		return university;
 	}
 
-	public void setUniversity(String university) {
+	public void setUniversityName(String university) {
 		this.university = university;
 	}
 
