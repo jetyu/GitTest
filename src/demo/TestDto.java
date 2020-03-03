@@ -5,7 +5,7 @@ public class TestDto {
 	String name;
 	String gender;
 	int age;
-	float price;
+ 
 	String universityName;
 
 	public int getId() {
@@ -38,14 +38,6 @@ public class TestDto {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public float getPrice() {
-		return price;
-	}
-
-	public void setPrice(float price) {
-		this.price = price;
 	}
 
 	public String getUniversityName() {
