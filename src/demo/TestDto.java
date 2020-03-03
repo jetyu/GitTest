@@ -1,11 +1,9 @@
 package demo;
 
 public class TestDto {
-<<<<<<< HEAD
+ 
 	String university;
-=======
 	String schoolName;
->>>>>>> branch 'master' of https://github.com/jetyu/GitTest.git
 	String name;
 	int age;
 	float price;
