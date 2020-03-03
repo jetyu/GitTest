@@ -5,7 +5,6 @@ public class TestDto {
 	String name;
 	String gender;
 	int age;
-
  
 	String universityName;
 	String universityMajor;
