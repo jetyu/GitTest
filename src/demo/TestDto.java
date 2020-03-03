@@ -1,12 +1,11 @@
 package demo;
 
 public class TestDto {
- 	String gender;
-	String universityName;
-	String schoolName;
 	String name;
+	String gender;
 	int age;
 	float price;
+	String universityName;
 
 	public String getUniversityName() {
 		return universityName;
@@ -38,6 +37,14 @@ public class TestDto {
 
 	public void setPrice(float price) {
 		this.price = price;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	@Override
