@@ -1,7 +1,7 @@
 package demo;
 
 public class TestDto {
-
+	String schoolName;
 	String name;
 	int age;
 	float price;
