@@ -1,18 +1,19 @@
 package demo;
 
 public class TestDto {
+	int id;
 	String name;
 	String gender;
 	int age;
 	float price;
 	String universityName;
 
-	public String getUniversityName() {
-		return universityName;
+	public int getId() {
+		return id;
 	}
 
-	public void setUniversityName(String universityName) {
-		this.universityName = universityName;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -21,6 +22,14 @@ public class TestDto {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public int getAge() {
@@ -39,17 +48,21 @@ public class TestDto {
 		this.price = price;
 	}
 
-	public String getGender() {
-		return gender;
+	public String getUniversityName() {
+		return universityName;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setUniversityName(String universityName) {
+		this.universityName = universityName;
 	}
 
 	@Override
 	public String toString() {
-		return "TestDto [name=" + name + ", age=" + age + ", price=" + price + "]";
+		return "TestDto [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", price=" + price
+				+ ", universityName=" + universityName + ", getId()=" + getId() + ", getName()=" + getName()
+				+ ", getGender()=" + getGender() + ", getAge()=" + getAge() + ", getPrice()=" + getPrice()
+				+ ", getUniversityName()=" + getUniversityName() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
 
 }
