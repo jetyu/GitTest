@@ -7,6 +7,7 @@ public class TestDto {
 	String name;
 	int age;
 	float price;
+	int id;
 
 	public String getUniversityName() {
 		return universityName;
