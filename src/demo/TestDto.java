@@ -5,8 +5,18 @@ public class TestDto {
 	String name;
 	String gender;
 	int age;
-	float price;
+
+ 
 	String universityName;
+	String universityMajor;
+	
+	public String getUniversityMajor() {
+		return universityMajor;
+	}
+
+	public void setUniversityMajor(String universityMajor) {
+		this.universityMajor = universityMajor;
+	}
 
 	public int getId() {
 		return id;
@@ -40,14 +50,6 @@ public class TestDto {
 		this.age = age;
 	}
 
-	public float getPrice() {
-		return price;
-	}
-
-	public void setPrice(float price) {
-		this.price = price;
-	}
-
 	public String getUniversityName() {
 		return universityName;
 	}
@@ -58,11 +60,10 @@ public class TestDto {
 
 	@Override
 	public String toString() {
-		return "TestDto [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", price=" + price
-				+ ", universityName=" + universityName + ", getId()=" + getId() + ", getName()=" + getName()
-				+ ", getGender()=" + getGender() + ", getAge()=" + getAge() + ", getPrice()=" + getPrice()
-				+ ", getUniversityName()=" + getUniversityName() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
+		return "TestDto [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", universityName="
+				+ universityName + ", universityMajor=" + universityMajor + "]";
 	}
+
+	
 
 }
