@@ -1,12 +1,12 @@
 package demo;
 
 public class TestDto {
-	int id;
-	String name;
-	String gender;
-	int age;
-	String universityName;
-	String universityMajor;
+	private int id;
+	private String name;
+	private String gender;
+	private int age;
+	private String universityName;
+	private String universityMajor;
 
 	public int getId() {
 		return id;
