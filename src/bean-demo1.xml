@@ -1,0 +1,86 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd"
+	default-init-method="init" default-destroy-method="destroy">
+
+
+
+
+
+	<bean id="message" class="com.tutorialspoint.demo1.Message"
+		scope="singleton">
+		<property name="id" value="12"></property>
+		<property name="key" value="200"></property>
+		<property name="statement" ref="statement"></property>
+	</bean>
+	
+	<bean id="statement" class="com.tutorialspoint.demo1.Statement">
+		<property name="stId" value="300"></property>
+		<property name="listElement">
+			<list>
+				<value>足球</value>
+				<value>篮球</value>
+				<value>皮球</value>
+			</list>
+		</property>
+
+		<property name="arrayElement">
+			<array>
+				<value>足球a</value>
+				<value>篮球a</value>
+				<value>皮球a</value>
+			</array>
+		</property>
+
+		<property name="setElement">
+			<set>
+				<value>足球s</value>
+				<value>篮球s</value>
+				<value>皮球s</value>
+			</set>
+		</property>
+
+		<property name="mapElement">
+			<map>
+				<entry>
+					<key>
+						<value>football</value>
+					</key>
+					<value>足球</value>
+				</entry>
+
+				<entry>
+					<key>
+						<value>basketball</value>
+					</key>
+					<value>篮球</value>
+				</entry>
+
+				<entry>
+					<key>
+						<value>ball</value>
+					</key>
+					<value>皮球</value>
+				</entry>
+			</map>
+		</property>
+
+		<property name="propsElement">
+			<props>
+				<prop key="football">足球p</prop>
+				<prop key="basketball">篮球p</prop>
+				<prop key="ball">皮球p</prop>
+			</props>
+		</property>
+	</bean>
+
+<bean class="com.tutorialspoint.demo1.InitHelloWorld" />
+
+
+</beans>
