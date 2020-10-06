@@ -1,2 +1,1 @@
-macos txt 1412 macos 10.14.6
-windows txt 1415 win10
+master
